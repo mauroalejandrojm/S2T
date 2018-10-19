@@ -16,7 +16,7 @@ body{
   margin-bottom: 30px;
 }
 .actions{
-  font-family: 'Lato', sans-serif;
+  
 }
 .actions a{
   box-sizing: border-box;
@@ -35,7 +35,6 @@ body{
   border: 1px solid #239647;
   color: #239647;
 }
-
 .modal{
   width: 500px;
   padding: 35px 25px;
@@ -78,7 +77,21 @@ body{
     transform: translateX(0);
   }
 }
-.modal .loader-bar .bar .actions .success {
+.actions .success {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: colored 30s infinite linear;
+  background-image: -webkit-linear-gradient(90deg, #062511, #bcecc2);
+}
+@-webkit-keyframes colored {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
+.modal .loader-bar {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-animation: colored 30s infinite linear;
