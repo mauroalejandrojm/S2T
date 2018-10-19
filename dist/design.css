@@ -59,5 +59,22 @@ body{
 }
 .modal .loader-bar .bar{
   position: absolute;
-  b
+  bottom: 0;
+  width: 80px;
+  height: 4px;
+  background: #239647;
+  animation: exordo-loader 3s ease infinite;
+  border-radius: 3px;
+  transform-origin: 50% 50%;
+}
+@keyframes exordo-loader {
+  0%  {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(480px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
