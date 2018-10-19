@@ -105,3 +105,8 @@ body{
     -webkit-filter: hue-rotate(-360deg);
   }
 }
+@media screen and (max-width: 460px) {
+  .modal {
+  width: 80%;
+  }
+}
