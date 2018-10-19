@@ -16,7 +16,7 @@ body{
   margin-bottom: 30px;
 }
 .actions{
-  
+  font-family: 'Lato', sans-serif;
 }
 .actions a{
   box-sizing: border-box;
